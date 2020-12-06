@@ -9,7 +9,7 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y --no-install-recommends tzdata locales curl perl adduser patch supervisor libio-socket-ssl-perl libgomp1 ca-certificates
 
-RUN curl -fLs --output /tmp/lms.deb http://downloads.slimdevices.com/LogitechMediaServer_v7.9.3/logitechmediaserver_7.9.3_amd64.deb
+RUN curl -fLs --output /tmp/lms.deb http://downloads.slimdevices.com/LogitechMediaServer_v7.9.4_unreleased/logitechmediaserver_7.9.4~1603273368_amd64.deb
 RUN dpkg -i /tmp/lms.deb
 RUN rm -f /tmp/lms.deb
 
