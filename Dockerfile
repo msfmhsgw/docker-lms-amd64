@@ -1,4 +1,4 @@
-FROM amd64/debian:buster
+FROM amd64/debian:buster-slim
 
 LABEL maintainer="masafumi.hasegawa@gmail.com"
 
